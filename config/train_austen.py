@@ -20,9 +20,11 @@ block_size = 512 # context of up to 256 previous characters
 
 # baby GPT model :)
 # 8/8/512 uses 8G GPU RAM and 25 million parameters
-n_layer = 8
-n_head = 8
-n_embd = 512
+# 16/16/1024 uses 30G GPU RAM and 202 million parameters (V100 40GB x1)
+
+n_layer = 16
+n_head = 16
+n_embd = 1024
 dropout = 0.2
 
 learning_rate = 1e-3 # with baby networks can afford to go a bit higher
