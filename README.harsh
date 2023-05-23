@@ -1,0 +1,2 @@
+# This is basically what we need for training a better model with multiple GPUS
+torchrun --standalone --nproc_per_node=2 train.py config/train_gpt2.py
